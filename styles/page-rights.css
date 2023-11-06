@@ -143,7 +143,10 @@ header {
 
 .alinhamento-form form {
     display: grid;
+    justify-content: center;
 }
+
+
 
 
 
@@ -159,7 +162,6 @@ header {
 .section-01 img {
     padding-top: 20px;
 }
-
 
 
 .section-02 {
@@ -178,4 +180,20 @@ header {
 
 .section-02 p {
     font-size: 18.5px;
+}
+.botoes {
+    display: grid;
+    grid-gap: 20px;
+}
+.cadastro-usuario,
+.cadastro-e-mail,
+.cadastro-senha {
+    display: grid;
+    padding-bottom: 20px;
+}
+
+.login-usuario,
+.login-senha {
+    display: grid;
+    padding-bottom: 20px;
 }

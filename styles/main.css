@@ -15,7 +15,9 @@
     justify-content: space-between;
     align-items: center;
 }
-
+h2{
+    padding-top: 60px;
+}
 .alinhamento-logo {
     display: flex;
     align-items: center;
@@ -47,6 +49,20 @@ header {
     border: 0px;
     color: black;
 }
+#openCadastroModalButton{
+    font-size: 16px;
+    color: #000;
+    background-color: #004238;
+    padding: 10px 80px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.button-login #openCadastroModalButton:hover{
+    background-color: green;
+    border: 0px;
+    color: black;
+}
 
 .button-header button {
     font-size: 18px;
@@ -60,7 +76,6 @@ header {
     font-size: 18px;
     background-color: #004238;
     padding: 10px 30px;
-    border: 0px;
     color: white;
 }
 
@@ -68,14 +83,22 @@ header {
     background-color: #004238;
     color: white;
 }
-
+.carousel-inner{
+    height: 750px;
+    width: 100%;
+}
 .carousel-inner img {
     height: 750px;
     width: 200px;
 }
 
-
-
+.alinhamento-form input {
+    font-size: 10px;
+    background-color: #e9f0f0;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 0px;
+}
 
 
 /*MODAL LOGIN/CADASTRO*/
@@ -91,7 +114,7 @@ header {
 
 .modal-content {
     background-color: #fff;
-    padding: 90px;
+    padding: 6px;
     border-radius: 5px;
     position: absolute;
     top: 50%;
@@ -106,6 +129,7 @@ header {
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    user-select:none
 }
 
 .close:hover,
@@ -130,14 +154,31 @@ header {
 .alinhamento-modal form input { 
     width: 250px;
     height: 40px;
-    font-size: 22px;
+    font-size: 15px;
 }
 
 .login-alinhamento {
     display: flex;
     justify-content: center;
+    align-items: center;
+    user-select:none
 }
 
 .alinhamento-form form {
     display: grid;
+    justify-content: center;
+    
+}
+.cadastro-usuario, .cadastro-e-mail, .cadastro-senha{
+    display: grid;
+    padding-bottom: 20px;
+}
+
+.login-usuario, .login-senha{
+    display: grid;
+    padding-bottom: 20px ;
+}
+.botoes{
+    display: grid;
+    grid-gap: 20px;
 }
